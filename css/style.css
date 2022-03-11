@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 1024px;
+  padding: 42px 24px;
+}
+
+.proyectob {
+  background-image: url("../assets/images/preview.jpg");
+  background-size: cover;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.main {
+  padding: 20px 24px;
+}
+
+.borde {
+  border-radius: 10px;
+}
+
+.header {
+  position: sticky;
+  padding: 20px 24px;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parrafo {
+  color: #0d1e2d;
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.navbar h1 a {
+  font-family: "Gloria Hallelujah", cursive;
+  cursor: pointer;
+  color: black;
+}
+
+.nav__item {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.nav__link {
+  color: #393939;
+}
+
+.nav__link:hover {
+  color: rgb(165, 165, 173);
+}
+
+.nav__menu.active {
+  right: 0;
+  transition: all 0.4s ease;
+}
+
+.bx-menu,
+.bx-x {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.options span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin: 5rem 0 2rem;
+}
+
+.proyectos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#proyectos,
+#contacto,
+#inicio {
+  height: 50px;
+  display: inline-block;
+}
+
+.proyectos > * {
+  flex: 1 1 320px;
+}
+
+.proyecto {
+  position: relative;
+  border: thin solid black;
+  margin: 17px;
+  max-width: 291px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.proyecto__info {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.proyecto:hover .proyecto__info {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 7px;
+}
+.proyecto__info h2,
+li {
+  margin-bottom: 1rem;
+}
+.proyect__info ul {
+  list-style: none;
+}
+
+.proyect__info-opciones {
+  margin-top: 10px;
+}
+.opciones-buttom {
+  color: white;
+  cursor: pointer;
+}
+.opciones-buttom {
+  transition: all 0.3s ease;
+  margin: 0 0.8rem;
+}
+
+.opciones-buttom:hover {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.opciones-buttom:hover:nth-child(2) {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.form__contacto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.info__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 15px;
+  max-width: 100%;
+}
+
+.form__container-input {
+  margin-bottom: 1rem;
+  flex: 0 0 100%;
+}
+
+.form__container-input:nth-child(4) {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form__container-textarea {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  /* background-color: #d4cfcf; */
+  border: 1px solid #d4cfcf;
+  padding: 10px 0;
+  display: block;
+  width: 96%;
+  height: calc(1.5rem + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  width: 98%;
+  height: 200px;
+}
+
+input:focus,
+textarea:focus {
+  /* background-color: red; */
+  border: 1px solid #817c7c;
+}
+
+.proyectos__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-form,
+.proyectos__button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  min-width: 200px;
+  height: calc(1.5rem + 0.75rem + 2px);
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+  color: black;
+  font-size: 0.8rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button-form:hover,
+.proyectos__button:hover {
+  transition: all 0.3s ease;
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.proyectos__button:hover a {
+  color: #fff;
+}
+
+.info__contacto li {
+  margin-bottom: 1rem;
+}
+
+.info__contacto li strong {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.perfiles span {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.info__contacto li .info__extra {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+  margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+svg {
+  vertical-align: -4px;
+}
+
+.disable {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    background-color: #fbfefd;
+    padding: 4.5rem 0 1rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__menu ul {
+    display: flex;
+  }
+  .nav__menu ul .nav__item {
+    margin: 0 2rem;
+    font-size: 1.2rem;
+  }
+
+  .nav__menu ul .close {
+    display: none;
+  }
+
+  .options {
+    display: none;
+  }
+
+  .form__container {
+    max-width: 50%;
+    margin-right: 3rem;
+  }
+
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+
+  .info__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 15px;
+  }
+}
